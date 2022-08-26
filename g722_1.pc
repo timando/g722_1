@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: spandsp
+Description: A library for the ITU G.722.1 and G.722.1C audio codecs.
+Requires:
+Version: 0.0.2
+Libs: -L${libdir} -lg722_1
+Libs.private: -lm
+Cflags: -I${includedir}
